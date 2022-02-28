@@ -1,0 +1,41 @@
+.block-title, .block-text, .Top-text, .menu_sub_link, .menu_link, .down-text{
+	color: #cdd9e5;
+}
+
+.text_link{
+	color: #98c5f3;
+}
+
+.Top-text:hover{
+    color: #d1e8ff;
+}
+
+.text_link:hover{
+	color: #b5daff;
+}
+
+.block {
+    background-color: #2d333b;
+}
+
+.menu_icon span,
+.menu_icon::before,
+.menu_icon::after{
+	background-color: white;
+}
+
+.top, .menu_sub_list, .down{
+	background-color: #1c2128;
+}
+
+.menu_body{
+	background-color: rgba(15, 17, 20, 0.9);
+}
+
+.btn-toggle {
+	filter: invert(100%);
+}
+
+body._touch .menu_arrow{
+	border-top: 10px solid #cdd9e5;
+}

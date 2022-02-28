@@ -1,0 +1,619 @@
+@font-face {
+	font-family: 'Top'; 
+    font-style: normal;
+	src: local('Top'),
+		url(../fonts/Intro.otf); 
+}
+
+.block-title{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin: 0;
+	font-family: "Top", "Arial", sans-serif;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.text_link{
+	text-decoration: none;
+}
+
+.text_map{
+	position: absolute;
+	right: 6vw;
+}
+
+.map-img{
+	width: 21vw;
+	height: auto;
+}
+
+.image-sert{
+	width: 13%;
+	height: auto;
+}
+
+.first-image-sert{
+	margin-left: 50vw;
+}
+
+
+.image-table{
+	width: 85%;
+	height: auto;
+}
+
+.two-img{
+	position: absolute;
+	margin-top: -3px;
+	display: inline-block;
+}
+
+.block-text{
+	position: absolute;
+	margin-left: 10vw;
+	margin-right: 6vw;
+	margin-top: 3vw;
+	font-family: "Top", "Arial", sans-serif;
+	font-size: 1.2vw;
+	text-align: left;
+	max-width: 40vw;
+	display: inline-block;
+}
+
+.image-people{
+	position: absolute;
+	right: 16vw;
+	display: inline-block;
+	width: 15%;
+	height: auto;
+}
+
+.image-you{
+	position: absolute;
+	right: 10vw;
+	display: inline-block;
+	width: 25%;
+	height: auto;
+}
+
+.image-git{
+	position: absolute;
+	right: 10vw;
+	display: inline-block;
+	width: 20%;
+	height: auto;
+}
+
+.image-unity{
+	position: absolute;
+	right: 1vw;
+	display: inline-block;
+	width: 40%;
+	height: auto;
+}
+
+.image-pers{
+	position: absolute;
+	right: 25vw;
+	display: inline-block;
+	width: 9vw;
+	height: auto;
+}
+
+.image-pers2{
+	position: absolute;
+	right: 20vw;
+	display: inline-block;
+	width: 7vw;
+	height: auto;
+}
+
+.menu_body{
+	z-index: 4;
+	position: absolute;
+	top: -14%;
+	right: 7.05vw;
+	width: auto;
+	transition: all 0.3s ease 0s;
+	overflow: visible;
+	padding: 0px 10px;
+}
+
+.top {
+	position: relative;
+	z-index: 999;
+    width: 85vw;
+    height: 6vw;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.down {
+	position: relative;
+	z-index: 999;
+    width: 85vw;
+    height: 3vw;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.down-text{
+	font-family: "Top", "Arial", sans-serif;
+	font-size: 0.8vw;
+	display: inline-block;
+	position: absolute;
+	left: 0.5vw;
+	top: 0.5vw;
+}
+
+.block {
+	position: relative;
+	z-index: 0;
+    width: 85vw;
+    height: 28vw;
+	margin: auto;
+}
+
+.top-img{
+	width: 4vw;
+	height: 4vw;
+}
+
+img.Logo{
+    margin: 0.5vw;
+	width: 5vw;
+	height: 5vw;
+}
+
+.Top-text{
+    text-decoration: none;
+    font-size: 2.7vw;
+    font-family: "Top", "Arial", sans-serif;
+    margin-left: 1vw;
+    position: relative;
+	top: -30%;
+}
+
+
+body {
+    background-image: url(../img/Fon.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+	margin: 0;
+}
+
+.btn-toggle {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	top: -10%;
+	margin-left: 7vw;
+}
+
+
+.header_menu{
+	display: inline-block;
+	position: relative;
+	top: -20%;
+	margin-left: 1vw;
+}
+
+.menu_link{
+	font-size: 20px;
+	text-decoration: none;
+    font-family: "Top", "Arial", sans-serif;
+	cursor: pointer;
+}
+
+li {
+    list-style-type: none; 
+}
+
+.menu_list{
+	align-items: center;
+	padding-left: 0px;
+}
+
+.menu_list > li{
+	position: relative;
+	padding: 0.3vw 0;
+	margin: 0px 0px 0px 0px;
+}
+
+.menu_list > li:last-child{
+	margin-bottom: 0;
+}
+
+.menu_list > li._active .menu_sub_list{
+	display: block;
+}
+
+.menu_sub_list{
+	padding: 10px;
+	position: absolute;
+	z-index: 5;
+	width: auto;
+	transform: translate(0px, 10%);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 0.3s ease 0s;
+	overflow: visible;
+}
+
+.menu_sub_list li{
+	margin: 0px 0px 0.5vw 0px;
+}
+
+.menu_sub_link{
+	text-decoration: none;
+	font-family: "Top", "Arial", sans-serif;
+	font-size: 16px;
+}
+
+.menu_link:hover + .menu_sub_list{
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+	overflow: visible;
+}
+
+.menu_sub_list:hover{
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+	overflow: visible;
+}
+
+body._touch .menu_list > li._active .menu_sub_list{
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+}
+
+body._touch .menu_list > li .menu_sub_list{
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0px, 10%);
+	pointer-events: none;
+}
+
+body._touch .menu_list > li._active .menu_arrow{
+	transform: rotate(-180deg);
+}
+
+.menu_arrow{
+	display: none;
+}
+
+body._touch .menu_list > li{
+	display: flex;
+	align-items: center;
+}
+
+body._touch .menu_link{
+	flex: 1 1 auto;
+}
+
+body._touch .menu_arrow{
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	transition: transform 0.3s ease 0s;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin: 0px 0px 0px 10px;
+	right: 40%;
+}
+
+.menu_icon{
+	z-index: 5;
+	position: relative;
+	width: 4vw;
+	height: 3vw;
+	cursor: pointer;
+}
+
+
+
+.menu_body._active{
+	top: 6vw;
+}
+
+.menu_icon span,
+.menu_icon::before,
+.menu_icon::after{
+	left: 0;
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	transition: all 0.3s ease 0s;
+}
+
+.menu_icon::before,
+.menu_icon::after{
+	content: "";
+}
+
+.menu_icon::before{
+	top: 0;
+}
+
+.menu_icon::after{
+	bottom: 0;
+}
+
+.menu_icon span{
+	top: 50%;
+	transform: scale(1) translate(0px, -50%);
+}
+
+.menu_icon._active span{
+	transform: scale(0) translate(0px, -50%);
+}
+
+.menu_icon._active::before{
+	top: 50%;
+	transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.menu_icon._active::after {
+	bottom: 50%;
+	transform: rotate(45deg) translate(0px, 50%);
+}
+
+@media (max-width: 1300px){
+	.btn-toggle {
+		margin-left: 5vw;
+	}
+}
+
+@media (max-width: 767px){
+	.block {
+		height: 215px;
+	}
+	
+	.menu_sub_list{
+		top: 100%;
+	}
+
+	.top{
+		width: 100%;
+		height: 10vw;
+	}
+
+	.down{
+		width: 100%;
+		height: 7vw;
+	}
+
+	.block{
+		width: 100%;
+		height: 54vw;
+	}
+
+	.btn-toggle {
+		margin-left: 7vw;
+		top: 0;
+	}
+
+	.block-title{
+		font-size: 5vw;
+	}
+
+	.block-text{
+		font-size: 1.9vw;
+		max-width: 40vw;
+	}
+
+	.image-people{
+		width: auto;
+		height: 60%;
+	}
+
+	.down-text{
+		font-size: 2vw;
+		left: 1vw;
+		top: 1vw;
+	}
+
+	.Logo{
+		width: 8vw;
+		height: 8vw;
+	}
+
+	.top-img{
+		width: 8vw;
+		height: 8vw;
+	}
+
+	.menu_icon{
+		width: 7vw;
+		height: 6vw;
+		top: 1vw;
+	}
+
+	.menu_body{
+		right: 0;
+		width: 450px;
+		top: -40vw;
+	}
+
+	.menu_body._active{
+		top: 10vw;
+		padding: 0;
+	}
+
+	.menu_link{
+		font-size: 30px;
+		margin-left: 10px;
+	}
+
+	.menu_sub_list{
+		width: 50%;
+	}
+
+	.menu_sub_link{
+		font-size: 20px;
+	}
+
+	.map-img{
+		width: 40vw;
+		height: auto;
+	}
+
+	.image-sert{
+		width: auto;
+		height: 55%;
+	}
+
+	.image-table{
+		width: 0;
+		height: 0;
+	}
+
+	.image-pers{
+		width: 12.5vw;
+	}
+
+	.image-pers2{
+		width: 12.5vw;
+	}
+
+	.image-unity{
+		width: 50%;
+	}
+
+	.image-you{
+		width: 35%;
+	}
+
+	.image-git{
+		width: 30%;
+	}
+}
+
+body._touch .menu_sub_list{
+	top: 100%;
+}
+	
+body._touch .top{
+	width: 100%;
+	height: 10vw;
+}
+
+body._touch .down{
+	width: 100%;
+	height: 7vw;
+}
+	
+body._touch .block{
+	width: 100%;
+	height: 53vw;
+}
+	
+body._touch .btn-toggle {
+	margin-left: 10vw;
+	top: 0;
+}
+
+body._touch .block-title{
+	font-size: 5vw;
+}
+
+body._touch .block-text{
+	font-size: 2.2vw;
+	max-width: 40vw;
+}
+
+body._touch .image-people{
+	width: auto;
+	height: 60%;
+}
+
+body._touch .down-text{
+	font-size: 2vw;
+	left: 1vw;
+	top: 1vw;
+}
+
+body._touch .Logo{
+	width: 8vw;
+	height: 8vw;
+}
+
+body._touch .top-img{
+	width: 8vw;
+	height: 8vw;
+}
+
+body._touch .menu_icon{
+	width: 7vw;
+	height: 6vw;
+	top: 1vw;
+}
+
+body._touch .menu_body{
+	right: 0;
+	width: 100%;
+	top: -20vw;
+}
+
+body._touch .menu_body._active{
+	top: 10vw;
+	width: 100%;
+	padding: 0;
+}
+
+body._touch .menu_link{
+	font-size: 45px;
+}
+
+body._touch .menu_sub_list{
+	width: 50%;
+}
+
+body._touch .menu_sub_link{
+	font-size: 40px;
+}
+
+body._touch .map-img{
+	width: 40vw;
+	height: auto;
+}
+
+body._touch .image-sert{
+	width: auto;
+	height: 55%;
+}
+
+body._touch .image-table{
+	width: 0;
+	height: 0;
+}
+
+body._touch .image-pers{
+	width: 12.5vw;
+}
+
+body._touch .image-pers2{
+	width: 12.5vw;
+}
+
+body._touch .image-unity{
+	width: 50%;
+}
+
+body._touch .image-you{
+	width: 35%;
+}
+
+body._touch .image-git{
+	width: 30%;
+}

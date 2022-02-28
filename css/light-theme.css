@@ -1,0 +1,38 @@
+.block-title, .block-text, .Top-text, .menu_sub_link, .menu_link, .down-text{
+	 color: #394155;
+}
+
+.Top-text:hover{
+    color: #485166;
+}
+
+.text_link{
+	color: #5a6fa6;
+}
+
+.text_link:hover{
+	color: #7991ce;
+}
+
+
+.block {
+    background-color: #fff;
+}
+
+.menu_icon span,
+.menu_icon::before,
+.menu_icon::after{
+	background-color: black;
+}
+
+.top, .menu_sub_list, .down {
+	background-color: #d9d9d9;
+}
+
+.menu_body{
+	background-color: rgba(156, 156, 156, 0.9);
+}
+
+body._touch .menu_arrow{
+	border-top: 10px solid #394155;
+}
